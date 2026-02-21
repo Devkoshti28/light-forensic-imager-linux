@@ -1,0 +1,30 @@
+# Compiled C Binaries & Objects
+build/
+*.o
+*.out
+*.exe
+
+# Memory Capture Modules
+*.ko
+LiME/
+
+# Forensic Images & Output
+*.dd
+*.img
+*.raw
+*.lime
+*.E01
+recovered/
+out/
+/tmp/*
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env/
+
+# OS generated files
+.DS_Store
+Thumbs.db
