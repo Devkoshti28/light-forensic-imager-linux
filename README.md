@@ -57,10 +57,15 @@ After installation:
 🔍 Features
 
 ✔ Create forensic disk images using dd
+
 ✔ Capture system RAM safely
+
 ✔ Recover raw/deleted files
+
 ✔ Explore partitions and file systems
+
 ✔ Lightweight and modular design
+
 ✔ Linux compatible
 
 
