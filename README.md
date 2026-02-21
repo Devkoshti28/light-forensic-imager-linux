@@ -7,29 +7,29 @@ A lightweight Linux-based Digital Forensics tool inspired by FTK Imager, built u
 Light Forensic Imager is a modular digital forensics tool developed for Linux environments.
 It enables investigators to:
 
-Create forensic disk images (.dd)
+    Create forensic disk images (.dd)
 
-Capture volatile memory (RAM)
+    Capture volatile memory (RAM)
 
-Perform raw file recovery
+    Perform raw file recovery
 
-Explore disk structures using TSK
+    Explore disk structures using TSK
 
-Operate through a Python-based GUI
+    Operate through a Python-based GUI
 
 This tool focuses on lightweight performance, modular architecture, and forensic integrity.
 
 🛠 Tech Stack
 
-C – Core forensic modules
+    C – Core forensic modules
 
-Python 3 – GUI Interface
+    Python 3 – GUI Interface
 
-Linux System Calls – Low-level disk & memory access
+    Linux System Calls – Low-level disk & memory access
 
-The Sleuth Kit (TSK) – File system exploration
+    The Sleuth Kit (TSK) – File system exploration
 
-dd – Disk imaging
+    dd – Disk imaging
 
 📂 Project Structure
 LiteImager/
@@ -41,11 +41,17 @@ LiteImager/
 ├── tsk_explorer.c        # File system exploration
 ├── install.sh            # Setup script
 └── README.md
+
+
 ⚙️ Installation
-1️⃣ Clone Repository
+
+1️⃣ Clone Repository:
+
 git clone https://github.com/DevKoshti28/light-forensic-imager-linux.git
 cd light-forensic-imager-linux
-2️⃣ Run Setup Script
+
+2️⃣ Run Setup Script:
+
 chmod +x install.sh
 ./install.sh
 
@@ -55,7 +61,7 @@ The script installs required dependencies and compiles C modules.
 
 After installation:
 
-sudo python3 gui.py
+    sudo python3 gui.py
 
 ⚠ Root privileges are required for disk and RAM acquisition.
 
@@ -68,14 +74,7 @@ sudo python3 gui.py
 ✔ Lightweight and modular design
 ✔ Linux compatible
 
-🧠 Architecture
-GUI (Python)
-      ↓
-Core Modules (C)
-      ↓
-Linux System Calls
-      ↓
-Disk / RAM Devices
+
 🔐 Forensic Considerations
 
 Uses read-only acquisition where possible
@@ -86,26 +85,3 @@ Designed for educational & research purposes
 
 Requires administrator privileges for acquisition
 
-🎓 Academic Use
-
-This project can be used for:
-
-Final Year Project
-
-Digital Forensics Research
-
-Cybersecurity Demonstrations
-
-DFIR Learning
-
-🚧 Future Improvements
-
-Hash verification (MD5/SHA256)
-
-Evidence metadata logging
-
-Case management system
-
-Improved GUI visualization
-
-Report generation (PDF export)
