@@ -31,29 +31,18 @@ This tool focuses on lightweight performance, modular architecture, and forensic
 
     dd – Disk imaging
 
-📂 Project Structure
-LiteImager/
-│
-├── gui.py                # Python GUI
-├── img_disk.c            # Disk imaging module
-├── img_ram.c             # RAM capture module
-├── recover_raw.c         # Raw file recovery
-├── tsk_explorer.c        # File system exploration
-├── install.sh            # Setup script
-└── README.md
-
 
 ⚙️ Installation
 
 1️⃣ Clone Repository:
 
-git clone https://github.com/DevKoshti28/light-forensic-imager-linux.git
-cd light-forensic-imager-linux
+    git clone https://github.com/DevKoshti28/light-forensic-imager-linux.git
+    cd light-forensic-imager-linux
 
 2️⃣ Run Setup Script:
 
-chmod +x install.sh
-./install.sh
+    chmod +x install.sh
+    ./install.sh
 
 The script installs required dependencies and compiles C modules.
 
