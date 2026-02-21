@@ -1,28 +1,111 @@
-# Light Forensic Imaging Tool (Linux)
+🚀 Light Forensic Imager (Linux)
 
-A lightweight forensic imaging and analysis tool for Linux systems.
-Inspired by FTK Imager, this tool supports:
+A lightweight Linux-based Digital Forensics tool inspired by FTK Imager, built using C and Python, designed for disk imaging, RAM acquisition, and basic forensic analysis.
 
-- Disk Imaging (SSD, HDD, USB) using dd
-- RAM Capture
-- Raw File Recovery
-- Basic TSK-based File Explorer
-- GUI Interface (Python)
+📌 Overview
 
-## Tech Stack
-- C (Core imaging modules)
-- Python (GUI)
-- GTK (Optional)
-- Linux System Calls
+Light Forensic Imager is a modular digital forensics tool developed for Linux environments.
+It enables investigators to:
 
-## Features
-- Create forensic disk images (.dd)
-- Capture system memory (RAM)
-- Recover deleted/raw files
-- Explore disk structures using TSK
+Create forensic disk images (.dd)
 
-## Installation
+Capture volatile memory (RAM)
 
-```bash
-sudo apt update
-sudo apt install build-essential python3 python3-pip
+Perform raw file recovery
+
+Explore disk structures using TSK
+
+Operate through a Python-based GUI
+
+This tool focuses on lightweight performance, modular architecture, and forensic integrity.
+
+🛠 Tech Stack
+
+C – Core forensic modules
+
+Python 3 – GUI Interface
+
+Linux System Calls – Low-level disk & memory access
+
+The Sleuth Kit (TSK) – File system exploration
+
+dd – Disk imaging
+
+📂 Project Structure
+LiteImager/
+│
+├── gui.py                # Python GUI
+├── img_disk.c            # Disk imaging module
+├── img_ram.c             # RAM capture module
+├── recover_raw.c         # Raw file recovery
+├── tsk_explorer.c        # File system exploration
+├── install.sh            # Setup script
+└── README.md
+⚙️ Installation
+1️⃣ Clone Repository
+git clone https://github.com/DevKoshti28/light-forensic-imager-linux.git
+cd light-forensic-imager-linux
+2️⃣ Run Setup Script
+chmod +x install.sh
+./install.sh
+
+The script installs required dependencies and compiles C modules.
+
+▶️ Run the Application
+
+After installation:
+
+sudo python3 gui.py
+
+⚠ Root privileges are required for disk and RAM acquisition.
+
+🔍 Features
+
+✔ Create forensic disk images using dd
+✔ Capture system RAM safely
+✔ Recover raw/deleted files
+✔ Explore partitions and file systems
+✔ Lightweight and modular design
+✔ Linux compatible
+
+🧠 Architecture
+GUI (Python)
+      ↓
+Core Modules (C)
+      ↓
+Linux System Calls
+      ↓
+Disk / RAM Devices
+🔐 Forensic Considerations
+
+Uses read-only acquisition where possible
+
+Maintains evidence integrity
+
+Designed for educational & research purposes
+
+Requires administrator privileges for acquisition
+
+🎓 Academic Use
+
+This project can be used for:
+
+Final Year Project
+
+Digital Forensics Research
+
+Cybersecurity Demonstrations
+
+DFIR Learning
+
+🚧 Future Improvements
+
+Hash verification (MD5/SHA256)
+
+Evidence metadata logging
+
+Case management system
+
+Improved GUI visualization
+
+Report generation (PDF export)
